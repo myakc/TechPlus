@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.onoffswitch {
+	position: relative;
+	width: 75px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+.onoffswitch.small-switch {
+	zoom: 0.8;
+}
+.onoffswitch-checkbox {
+	display: none;
+}
+.onoffswitch-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid #FFFAFA;
+	border-radius: 20px;
+	margin-bottom: 0;
+}
+.onoffswitch-inner {
+	width: 200%;
+	margin-left: -100%;
+	-moz-transition: margin 0.3s ease-in 0s;
+	-webkit-transition: margin 0.3s ease-in 0s;
+	-o-transition: margin 0.3s ease-in 0s;
+	transition: margin 0.3s ease-in 0s;
+	display: block;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+	float: left;
+	width: 50%;
+	height: 25px;
+	padding: 0;
+	line-height: 25px;
+	color: white;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+	content: "ON";
+	padding-left: 11px;
+	background-color: #2091cf;
+	color: #ffffff;
+	font-size: 12px;
+}
+.warning-switch .onoffswitch-inner:before {
+	background-color: #df6e1e;
+}
+.onoffswitch-inner:after {
+	content: "OFF";
+	padding-right: 13px;
+	background-color: #aaaaaa;
+	color: #ffffff;
+	text-align: left;
+	text-indent: 35px;
+}
+.onoffswitch-switch {
+	width: 15px;
+	margin: 7px;
+	background: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 20px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 44px;
+	-moz-transition: all 0.3s ease-in 0s;
+	-webkit-transition: all 0.3s ease-in 0s;
+	-o-transition: all 0.3s ease-in 0s;
+	transition: all 0.3s ease-in 0s;
+	display: block;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+	right: 0px;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch.tickswitch-switch {
+	border-radius: 0 20px 20px 0;
+	background-color: #1c7aad;
+	border-color: #1c7aad;
+	background-position: -288px 1px;
+	border-right-width: 10px;
+}

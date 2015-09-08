@@ -1,0 +1,28 @@
+<div class="container-fluid">
+
+    <div class="row-fluid">
+      <div class="span6" align="left">
+
+         Search: <input ng-model="query" placeholder="Search..">
+          </div>
+          <div class="span6" align="right">
+          Sort by:<select ng-model="orderProp"> <option  value="name">Alphabetical</option>
+        <option value="age">Newest</option></select>
+      </div>
+    </div>
+
+
+    <div>
+        <div class="row cardContainer">
+            <div class="span3 card" ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+                <div class="cardHeader cardCheckBox"><label  addtocart>Add to Cart: </label><input class="cardCheckBox" type="checkbox"></div>
+
+                <div class="cardBody">
+                    <a href="#/phones/{{phone.id}}" class="thumb"><img  ng-src="{{phone.imageUrl}}"></a>
+                    <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+                    <p align="auto">{{phone.snippet}}<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Zensar Phone Gallery</title>
+    <!-- Easy UI Css -->
+    <link rel="stylesheet" href="css/easyui.css" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <!-- BootStrap Plugins -->
+    <link rel="stylesheet" href="css/checkbox-x.min.css" media="all" type="text/css" />
+    <!-- /BootStrap Plugins -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/onOffSwicth.css" media="all" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-notify.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-animate.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/angular-resource.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="controller/controllers.js"></script>
+    <script src="filter/filters.js"></script>
+    <script src="service/services.js"></script>
+</head>
+<body>
+
+<header class="main-header">
+    <div class="row">
+        <figure class="logo col-md-3 col-lg-3 text-left remove-Left-Padding">
+            <a href="index.html" title="PhoneCatlog"><img src="img/qdts-logo.png" alt="Zensar Phone Catlog"> </a>
+        </figure>
+        <div class="col-md-7 col-lg-7 page-head text-center">
+            <h1>Zensar Online Phone Sopping</h1>
+        </div>
+        <div class="col-md-2 col-lg-2 cisco-logo text-right">
+            <a href="http://www.cisco.com" target="_blank" title="Cisco"><img src="img/cisco-logo.png" alt="Cisco"></a>
+        </div>
+    </div>
+</header>
+<nav class="navbar navbar-default top-nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+            </button>
+            <!-- <a href="#" class="navbar-brand">Project name</a> -->
+        </div>
+        <div class="navbar-collapse collapse noLeftPad">
+            <ul class="nav navbar-nav" id="whatsNew">
+                <li class="navbar-nav"><strong>Click <a href="#" title="Information" data-toggle="modal" data-target="#newQDDTS">here</a> to see &#34;What&#39;s New IN QDDTS&#43;&#63;&#34;
+                </strong></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right row">
+                <li><a href="javascript:void(0);" class="help-doc" title="Help Documentation" onclick="window.open('http://sjc-wwsl-qddts1:8080/qddtshelpNew/')"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+                <li><a href="javascript:void(0);" title="QDTS User"><span class="glyphicon glyphicon-user"></span>&nbsp;GUEST</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	  <!--	
+      <div class="view-container" align="Center">
+        <div ng-view class="view-frame"></div>
+      </div>
+		-->
+  <div animated-view></div>
+
+<!-- /container -->
+    <div class="navbar navbar-nav">
+        <div class="navbar-inner">
+            <div class="container">
+                <footer>
+                    <div class="row container-fluid">
+                        <div class="span7" align="left">
+                            <p class="text-muted">&copy; Cisco Systems, Inc. All rights reserved.</p>
+                        </div>
+                        <div class="span7" align="right">
+                            Twitter: <a href="https://twitter.com/OwaisMuz">@OwaisMuz</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
